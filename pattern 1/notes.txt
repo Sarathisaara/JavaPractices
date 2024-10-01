@@ -1,0 +1,298 @@
+What is CSS?
+    cascading style sheet is a language used to style and design the look of a webpage.
+    it control things like color,fonts,layout,and spacing
+  Introduced in Css:
+   hayon wium lie proposed the idea of css-1994
+   the 1st version of css1 was invited      
+
+
+
+
+
+
+
+Rules/Syntax:
+   Selector{
+    propertyName1:value;
+    propertyName2:value;
+    .
+    .
+    .
+    propertyNamen:valuen;
+
+   }
+ways to apply css?
+  they are:
+   1.Inline css
+   2.Internal css
+   3.External css
+ 1.Inline css:
+   it is a way of applying the css in the same line .by using style attribute.
+   <h1 style ="color:white; background-color:blue;">let's dive into css</h1>  
+ 2.Internal css:
+   it is a way of adding the css in the same html file itself. 
+   by using Style tag in can use of style tag anywhere in the html file 
+   it's recommeded 
+ 3.External css:
+   it is way of writing all the css code in one file which is saved with.css extension
+   that css file using have to link the html file using the link tag
+   notes:
+   the 1st will always be taken by inline css. because of the most recent updates
+   internal vs external depends on code flow which is written at last    
+
+//CSS selector:
+  to apply the css properties,we can target the html element in many ways
+  they are:
+    1.simple selector
+    2.combinator selector
+    3.pseudo class selector
+    4.pseudo element selector
+    5.attribute selector
+1. simple selector:
+       the target the element based on the classes/id's/tagname we have basics selectors
+       1.tagname
+       2.grouping
+       3.universal
+       4.id name
+       5.class name 
+    a. tag name:
+       *to target the element based on the tagname itself we have to use tagname selector
+       *the symbol was thew tagname itself  
+    b.grouping:
+       *to multiple elements at a time we have to use a grouping selector 
+       *whenever we need to pass similar properties for multiple element we can use of grouping selector
+       *the symbol are used to combine all elemnet is comma(,)
+    c. universal:
+       *it will target all the elemnt in the document including body tag too.
+       *  the symbol is asterisk(*).
+    d. id name:
+       * to target the element unique we have to use an id name 
+       *in css id name can be duplicate also there is no problem
+       *but once we have moved to advanced languages
+       *repetition of id name will not work.so it highly recommeded not in use from now on
+       *the symbol is hash(#).
+    e. class name:
+       *the specific element on the basics og class name we have to use class name 
+       *class attribute allow multiple identifier names in the same attribute
+       *class name can be repetitive also
+       * the symbol is dot(.);
+2.combinator selector:
+  it is a combination of 2 simple selector
+  based on the relation b/w element the css will target the element
+  they are:
+    1.descendant selector
+     *it will target all the children ,grandchildren,and so on.
+     *the symbol us space( ).
+    2. direct child
+     *it will target only ht children but not grandchildren, greatchildren and so on.
+     *the symbol is greater than(>).
+    3.adjacent sibling
+    *it will target only the first right most sibling of the element
+    *the symbol is plus(+).
+    4. general sibling      
+     *it will target all the sibling of the element
+     *the symbol is tilled(~)
+3.pseudo class selector:
+   a.these are special selector.
+   b.the symbol is single colon(:).
+     *: hover->it will apply the properties whenever we move the cursor on the element
+     *: link->it will apply the properties whenever the link is not visited
+     *: visited->it will apply the properties whenever the link is visited
+     *: active->it will apply the properties whenever hyper link is in active states
+     *: first-child->it will target only the 1st child 
+     *: last-child->it will target only last child
+     *: nth-child(even/odd/2n/2n+1)->it will target specific child based on the parameter
+     *: first-of-child->it will be target first child of each type
+     *: last-of-child->it will be target last child of each type
+     *: nth-of-type->it will be target nth child of each type
+     *: checked->it will be apply the css propertiesonce after checked
+4.pseudo element selector:
+  a.these are special selector
+  b.the symbol is double colon(::).
+     *::first-letter->it wil target only the letter of content
+     *::forst-line->it  will target only the first line of content
+     *::before->it  will add the content before the element
+     *::after->it  will add the content after the element
+     *::selection->it will changing while selecting the content by default it show color:*white*
+     *::marker->
+5.attribute selector:
+   it wil target the element based on the attribute name . instead of creating the creating new id name and class names we can use existing attribute     
+   1.tagname[attribute]
+   2.tagname[attribute="value"]
+
+
+ Textproperties:
+    it is basically used to apply css effects on text content.
+    they are:
+     1.color:
+       it will change the color of the text 
+       syntax:
+        color:value ;
+        value=any color
+     2.text-align:
+        it is used to align the content based on the value
+        syntax:
+        text:value;
+        value=left/start,center,right/end,justify
+     3.text-transform:
+      it is convert the text into other formats
+      syntax:
+      text transform:value;
+      value=lower ,uppercase,captialize
+     4.text-decoration:
+        it will be decorate the text by providing underline or overline with special styles
+        it is a shorthand propperty of text-decoration-line,text-decoration-styles & text-decoration- color
+        syntax:
+          text-decoration:text-decoration-line text-decoration-style text-decoration- color
+        value= text-decoration-line=underline,overline,line through
+        text-decoration-styles=solid,dashed,dotted,double,wavy
+        text-decoration- color=any color
+     5.text-indent:
+       it will provide the space at the initial position of the content
+       syntax:
+         text-indent:value;
+         value=any number.
+     6.text-wrap:
+      it will indicates whether to wrap the content into the next line or not.
+      syntax:
+       text-wrap:value;
+       value=wrap,nowrap.
+     7.letter-spacing:
+      it will specify the space b/w the letters
+      syntax:
+        letter-spacing=value;
+        value=any number.
+     8.word-spacing:
+      it will specify the space b/w the words
+      syntax:
+       word-spacing:value;
+       value=any number.
+     9.line-height:
+       it will specify the shadow for text content
+       syntax:
+         line-height:value;
+         value=any number. 
+     10.text-shdow:
+       it will specify the shadow for text content
+       syntax:
+         text shadow:x-axis,y-axis blur color;
+         default value:text-shadow:0px 0px 0px black;
+         ex: text shadow:2px 2px 3px blue.
+
+Font properties:
+   they are used to apply css effects of size ,boldness,styles,etc.
+   properties are:
+   1.font-size:
+     it will specify the size of the text content
+
+     
+   2.
+   3.
+   4.font-family:
+      it will specify the font family of text content
+      syntax:
+      font family:value;
+      values=1.from vs code 2.google fonts
+   5.font  variant:
+    it will be displayed in upper camel case formats
+     
+
+colors:
+   in css we can used to apply colors in many ways ,all color are extracted from the combination of Red,Green,Blue(RGB)
+   they are:
+   1.color-name:
+     we apply color based on color name itself
+     syntax:
+     property:color name;
+     value=any color.
+   2.rgb:
+     color from combination of red blue green eachcolor range from 0 to 255.
+     0 means no intensity
+     255 means full intensity 
+    syntax:
+     property:rgb();
+     value=any number(0-255).
+   3.rgba:
+    similar to rgb the fourth value indicates alpha which is nothing but opacity of color 
+    alpha range from 0.0-1.0
+    syntax:
+     property:rgba();
+     value=any number(0-255 , 0.0-1.0).
+   4.hex:
+     hexadecimal color ,combination of rgb.
+     each value range b/w 0-9 and a-f.
+    syntax:
+     property:#rrggbb;
+     we can apply in others formats also
+     property:#rgb;
+   5.hsl:(nue,saturation ,light)
+    HUE is color of wheel of 0-360 deg 
+    0deg represent red,120 deg represent blue,240 deg represent green.
+    SATURATION % of greyness ,ranges from 0-100% 
+    syntax:
+     property:hsl();
+   6.hsla:
+       hsl alpha is similar to hsl color ,4th value indicates aplha which is opacity of color
+    syntax:
+     property:hsla();
+
+
+Background properties:
+   it is used to apply the background effects to an elemnts background
+   it is shorthand property of background-color,image,repeat,position,attachment.
+ Background:it is a shorthand property of multiple background properties. instead of writing all properties we can pass all values over here.
+ .background-color:
+   it will specify the background color can an elemnts
+   syntax:
+    background-color:value;
+    value=any color.
+ .background-image:
+   it will specify the background image can be of am element           
+
+gradients: 
+   it is a gradual blend  b/w two or more colors,often used in design to create a smooth transition from one to another color
+   1.linear gradient:
+       the transition b/w color along a straight line (horizontal,vertical or diagonal).
+       syntax:
+       background:linear-gradient(direct,color,color);
+       value- direction :you can specify direction of the gradient
+              (to right-ltr
+              to bottom-top to bottom
+              to top right-bottom left to top right)
+       rainbow effects:
+         background:linear-gradient(to right,color,color,color)
+   2.radial gradient:
+      the transition b/w colors radiating out from a central position
+      background:radial-gradient(shape,color,color);
+      value-shape:you can specific the shape of the gradient
+      (circle-circular shape
+      ellipse-ellipse shape)
+   3.conic gradient:
+      the transition b/w color radiating out from a central point 
+      it is a type of gradient where color are blended in a circular or pie-like pattern around a central point ,rather than in a straight line or radiating out from thr center 
+       background:conic-gradient (red,yellow,green);              
+Border properties:
+   to apply Border to the element along with that it provide css effects to the border of an element
+   1.border:
+     it os shorthand property of border-width ,style,color.
+     syntax: 
+     border:border-width,-style,-color
+   2. border-width:
+      It will specify the width of the border. Syntax: border-width: any number
+   3. border-style:
+      It will specify the style of the border.
+      Syntax: border-style: Values;
+      Values: solid, dashed, dotted, double, groove, ridge, no
+ !important :
+  the important rule in the css
+
+Display:
+  it allow to  change the behavior of an element.it accepts the value like
+  1.none:
+      this will be not display anything in the browser
+      as well as it will be not occupy any space of the element
+  2.
+  3.
+  4.flex:
+  5.grid:
+   it will layout the webpage 
